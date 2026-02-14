@@ -82,6 +82,21 @@
       height: 100%;
       background: radial-gradient(
           circle at 20% 30%,
+          rgb(153 0 255 / 37%) 0%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 80% 70%,
+          rgb(0 255 255 / 37%) 0%,
+          transparent 50%
+        ),
+        radial-gradient(
+          circle at 50% 50%,
+          rgba(255, 0, 128, 0.2) 0%,
+          transparent 50%
+        );
+      /* background: radial-gradient(
+          circle at 20% 30%,
           rgba(255, 0, 255, 0.25) 0%,
           transparent 50%
         ),
@@ -94,7 +109,7 @@
           circle at 50% 50%,
           rgba(255, 0, 128, 0.2) 0%,
           transparent 50%
-        );
+        ); */
       pointer-events: none;
       z-index: 0;
       animation: gradientShift 15s ease infinite;
@@ -143,8 +158,8 @@
     img {
       width: 100%;
       margin: 0 auto;
-      border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 20px 60px rgb(0 0 0);
       transition: box-shadow 0.3s ease;
     }
 
@@ -171,10 +186,10 @@
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-radius: 25px;
-      border: 1px solid rgb(221 0 255 / 15%);
+      /* border: 1px solid rgb(221 0 255 / 15%); */
       padding: 50px 60px;
       max-width: 600px;
-      box-shadow: 0 25px 70px rgb(114 0 255 / 60%);
+      /* box-shadow: 0 25px 70px rgb(114 0 255 / 23%); */
       animation: scaleIn 0.8s ease;
     }
 
@@ -182,7 +197,7 @@
       font-size: 28px;
       margin: 0 0 20px 0;
       font-weight: 600;
-      background: linear-gradient(203deg, #7432c4, #00d8ff);
+      background: #9c9c9c;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -194,45 +209,43 @@
       padding: 15px 30px;
       background: linear-gradient(
         135deg,
-        rgba(184, 0, 255, 0.3),
+        rgb(184 0 255 / 68%),
         rgba(0, 216, 255, 0.3)
       );
       border-radius: 15px;
-      border: 2px solid rgb(253 0 255 / 50%);
+      /* border: 2px solid rgb(253 0 255 / 50%); */
       transition: all 0.3s ease;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
       color: #472140;
       font-weight: 500;
-      box-shadow: 0 5px 20px rgb(255 0 182 / 52%);
+      box-shadow: 0 5px 20px rgb(255 0 182 / 0%);
     }
 
     .contact .email:hover {
-      background: linear-gradient(
+      /* background: linear-gradient(
         135deg,
         rgba(184, 0, 255, 0.5),
         rgba(0, 216, 255, 0.5)
-      );
+      ); */
       transform: translateY(-2px);
-      box-shadow: 0 10px 30px rgb(0 216 255 / 70%);
-      border-color: rgba(0, 255, 208, 0.8);
-      color: #fff;
+      /* box-shadow: 0 10px 30px rgb(0 216 255 / 70%);
+      border-color: rgba(0, 255, 208, 0.8); */
+      /* color: #fff; */
     }
 
     .title {
       margin: 100px auto 50px;
       display: flex;
       justify-content: center;
-      font-size: clamp(36px, 6vw, 76px);
+      font-size: clamp(36px, 6vw, 70px);
       font-family: "Playfair", serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
       font-variation-settings: "wdth" 100;
       text-align: center;
-      /* background: linear-gradient(134deg, #360b39, #910084, #02379d, #03568d); */
-      /* background: linear-gradient(134deg, #ff006a, #5e056f, #02549d, #054739); */
       background: linear-gradient(134deg, #ff006a, #5e056f, #028d9d, #054739);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -243,12 +256,12 @@
     }
 
     .subtitle {
-      margin: 60px auto;
+      margin: 60px auto 20px;
       display: flex;
       justify-content: center;
       font-size: clamp(32px, 5vw, 69px);
       text-align: center;
-      background: linear-gradient(135deg, #ff0000, #8900ff, #00ff7d);
+      background: linear-gradient(135deg, #0072ff, #8900ff, #750074);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -274,7 +287,7 @@
     }
 
     .main p {
-      margin: 25px 20px;
+      margin: 15px 20px;
       width: 90%;
       max-width: 800px;
       line-height: 1.6;
@@ -288,13 +301,14 @@
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
       animation: fadeInUp 0.8s ease;
       transition: all 0.3s ease;
+      will-change: transform;
     }
 
     .main p:hover {
       background: rgba(255, 255, 255, 0.08);
       transform: translateY(-5px);
       /* box-shadow: 0 15px 50px rgba(255, 0, 255, 0.5); */
-      box-shadow: 0 15px 50px rgb(172 0 129 / 35%);
+      box-shadow: 0 15px 50px rgb(0 255 255 / 34%);
     }
 
     .bottom_img {
@@ -309,7 +323,7 @@
       flex-direction: column;
       display: flex;
       align-items: center;
-      margin: 60px 0;
+      margin: 10px 0;
     }
 
     .prize p {
@@ -324,35 +338,34 @@
       text-align: center;
       font-size: clamp(48px, 8vw, 100px);
       font-weight: 700;
-      background: linear-gradient(135deg, #b800ff, #c800ff, #00ffff, #ffff00);
+      background: linear-gradient(135deg, #c8ff00, #6c00e3, #ff005f, #a7de00);
+      /* background: #fff; */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       margin: 30px 0;
-      text-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+      /* text-shadow: 0 0 40px rgb(255 0 213 / 50%); */
+      text-shadow: 0 0 40px rgb(234 0 255 / 50%);
       animation: scaleIn 1s ease;
       padding: 20px;
     }
 
     .prize-name {
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.95),
-        rgb(0 188 223 / 77%)
-      );
-      color: #ffffff;
+      background: linear-gradient(135deg, rgb(49 49 49 / 95%), rgb(0 0 0));
+      color: #282828;
       padding: 20px 35px;
       border-radius: 20px;
       font-weight: 600;
-      box-shadow: 0 10px 40px rgb(0 177 255 / 60%);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      transition: all 0.3s ease;
+      box-shadow: 0 10px 40px rgb(1 1 1 / 26%);
+      border: 1px solid rgb(77 77 77 / 30%);
+      transition: all 0.5s ease;
       display: inline-block;
     }
 
     .prize-name:hover {
-      /* transform: scale(1.05); */
-      /* box-shadow: 0 15px 50px rgb(0 255 208 / 80%); */
+      /*      transform: scale(1.05); */
+      box-shadow: 0 10px 40px #3fb9b9;
+      color: #00fff5;
     }
 
     .epoch_prize {
@@ -458,7 +471,7 @@
         of these therapies—and we invite everyone to join this movement
       </p>
     </div>
-    <img class="epoch_prize" src="epoch_prize.png" />
+    <!-- <img class="epoch_prize" src="epoch_prize.png" /> -->
     <div class="prize">
       <p class="first-p">
         Therefore, we are establishing the
@@ -476,7 +489,7 @@
 
     <div class="contact">
       <p class="contact-title">For inquiries please contact:</p>
-      <a href="mailto:reverted-youth@protonmail.com" class="email">
+      <a href="mailto:revertedyouth@protonmail.com" class="email">
         revertedyouth@protonmail.com
       </a>
     </div>
