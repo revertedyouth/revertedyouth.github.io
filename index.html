@@ -276,6 +276,14 @@
       max-width: 1200px;
       margin: 0 auto;
       display: block;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      will-change: opacity;
+      z-index: -10;
+    }
+
+    .top_img.is-loaded {
+      opacity: 1;
     }
 
     .main {
@@ -447,7 +455,13 @@
   </style>
   <body>
     <div class="title">D. Rothschild & A. Usmanov</div>
-    <img class="top_img" src="top_img.png" />
+    <img
+      class="top_img"
+      src="top_img.png"
+      loading="eager"
+      decoding="sync"
+      onload="this.classList.add('is-loaded')"
+    />
     <div class="subtitle">Reverted Youth Mission</div>
     <div class="main">
       <p>
@@ -493,5 +507,12 @@
         revertedyouth@protonmail.com
       </a>
     </div>
+    <script>
+      const topImage = document.querySelector(".top_img");
+      if (topImage && topImage.complete) {
+        topImage.classList.add("is-loaded");
+        topImage.style.opacity = 1;
+      }
+    </script>
   </body>
 </html>
