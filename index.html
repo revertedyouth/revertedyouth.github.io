@@ -271,19 +271,51 @@
       font-weight: 200;
     }
 
-    .top_img {
+    .top_img_wrap {
       width: 80%;
       max-width: 1200px;
       margin: 0 auto;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgb(0 0 0);
+      z-index: -10;
+      aspect-ratio: 16 / 5;
+    }
+
+    .top_img_stub {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.02),
+        rgba(0, 216, 255, 0.08),
+        rgba(255, 0, 255, 0.04)
+      );
+      opacity: 1;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+    .top_img {
+      width: 100%;
+      /* height: 100%; */
+      margin: 0;
       display: block;
       opacity: 0;
       transition: opacity 0.8s ease;
       will-change: opacity;
-      z-index: -10;
+      box-shadow: none;
+      border-radius: 0;
+      object-fit: cover;
     }
 
-    .top_img.is-loaded {
+    .top_img_wrap.is-loaded .top_img {
       opacity: 1;
+    }
+
+    .top_img_wrap.is-loaded .top_img_stub {
+      opacity: 0;
     }
 
     .main {
@@ -397,7 +429,7 @@
         margin: 40px auto 0px;
       }
 
-      .top_img {
+      .top_img_wrap {
         width: 90%;
       }
 
@@ -455,13 +487,16 @@
   </style>
   <body>
     <div class="title">D. Rothschild & A. Usmanov</div>
-    <img
-      class="top_img"
-      src="top_img.png"
-      loading="eager"
-      decoding="sync"
-      onload="this.classList.add('is-loaded')"
-    />
+    <div class="top_img_wrap">
+      <div class="top_img_stub" aria-hidden="true"></div>
+      <img
+        class="top_img"
+        src="top_img.png"
+        loading="eager"
+        decoding="sync"
+        onload="markTopImageLoaded(this)"
+      />
+    </div>
     <div class="subtitle">Reverted Youth Mission</div>
     <div class="main">
       <p>
@@ -508,10 +543,16 @@
       </a>
     </div>
     <script>
+      function markTopImageLoaded(imageElement) {
+        const wrapper = imageElement.closest(".top_img_wrap");
+        if (wrapper) {
+          wrapper.classList.add("is-loaded");
+        }
+      }
+
       const topImage = document.querySelector(".top_img");
       if (topImage && topImage.complete) {
-        topImage.classList.add("is-loaded");
-        topImage.style.opacity = 1;
+        markTopImageLoaded(topImage);
       }
     </script>
   </body>
