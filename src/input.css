@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  ::selection {
+    background: #0a0a0a;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .geometric-grid {
+    background-size: 50px 50px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.03) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .image-container::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #0a0a0a;
+    z-index: -1;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .image-container:hover::before {
+    transform: translate(-5px, -5px);
+  }
+
+  .email-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .email-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .email-link:hover::after {
+    transform: scaleY(1);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+img {
+  filter: grayscale(100%) contrast(1.1);
+  transition: filter 0.6s ease;
+}
+
+img:hover {
+  filter: grayscale(0%) contrast(1);
+}
