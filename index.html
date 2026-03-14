@@ -3,22 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gruppo&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Reverted Youth</title>
+
     <meta
       name="description"
       content="Reverted Youth Mission: Accelerating the development of systemic rejuvenation therapies. Announcing the $100 million Epoch Prize."
     />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://reverted-youth.com/" />
@@ -38,530 +29,208 @@
       content="Accelerating the development of systemic rejuvenation therapies. Announcing the $100 million Epoch Prize."
     />
     <meta property="twitter:image" content="/og-image.png" />
-    <title>Reverted Youth</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/output.css" />
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <body class="geometric-grid min-h-screen flex flex-col">
+    <!-- Header -->
+    <header
+      class="w-full border-b border-black bg-white/90 backdrop-blur-md sticky top-0 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <div
+          class="font-serif text-lg md:text-xl tracking-[0.2em] uppercase font-semibold"
+        >
+          D. Rothschild & A. Usmanov
+        </div>
+        <div class="w-12 h-[1px] bg-black hidden md:block"></div>
+        <div
+          class="font-sans text-xs md:text-sm tracking-widest uppercase text-gray-500"
+        >
+          Initiative
+        </div>
+      </div>
+    </header>
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(
-        135deg,
-        #0a0a0a 0%,
-        #1a1a2e 50%,
-        #16213e 100%
-      );
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      font-family: "Gruppo", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      color: #fff;
-      overflow-x: hidden;
-      position: relative;
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Hero Image Section -->
+      <section class="max-w-7xl mx-auto px-6 pt-12 pb-20 animate-fade-up">
+        <div class="image-container">
+          <img
+            class="w-full aspect-[16/7] md:aspect-[16/5] object-cover border border-black"
+            src="top_img.png"
+            alt="Reverted Youth Initiative"
+            loading="eager"
+          />
+        </div>
+      </section>
 
-      cursor: default; /* или cursor: pointer; если это кнопка */
-      user-select: none; /* ← главное свойство */
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-    }
+      <!-- Mission Section -->
+      <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-24">
+          <!-- Title area -->
+          <div
+            class="lg:w-1/3 flex flex-col justify-start border-t-4 border-black pt-6 animate-fade-up delay-100"
+          >
+            <h1
+              class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight"
+            >
+              Reverted<br />Youth<br />Mission
+            </h1>
+          </div>
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* 
-      background: radial-gradient(
-          circle at 20% 30%,
-          rgb(153 0 255 / 37%) 0%,
-          transparent 50%
-        ),
-        radial-gradient(
-          circle at 80% 70%,
-          rgb(0 255 255 / 37%) 0%,
-          transparent 50%
-        ),
-        radial-gradient(
-          circle at 50% 50%,
-          rgba(255, 0, 128, 0.2) 0%,
-          transparent 50%
-        ); */
+          <!-- Text area -->
+          <div
+            class="lg:w-2/3 space-y-8 font-sans text-xl md:text-2xl font-light leading-relaxed text-gray-800 pt-6 animate-fade-up delay-200"
+          >
+            <p
+              class="text-black font-serif italic text-3xl md:text-4xl leading-snug"
+            >
+              We believe that systemic rejuvenation of the human body is now
+              very close.
+            </p>
+            <div class="w-16 h-[1px] bg-black my-8"></div>
+            <p>
+              Remarkable advances in partial reprogramming and epigenetic
+              resetting suggest that systemic rejuvenation therapies may be only
+              a few years away.
+            </p>
+            <p>
+              We deeply want as many people as possible to live long enough to
+              benefit from them.
+            </p>
+            <p class="font-medium text-black">
+              That’s why we are focusing our efforts on accelerating the
+              development of these therapies—and we invite everyone to join this
+              movement.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      background: radial-gradient(
-          circle at 20% 30%,
-          rgb(216 0 255 / 45%) 0%,
-          transparent 50%
-        ),
-        radial-gradient(
-          circle at 80% 70%,
-          rgb(0 255 255 / 37%) 0%,
-          transparent 50%
-        ),
-        radial-gradient(
-          circle at 50% 50%,
-          rgba(255, 0, 128, 0.2) 0%,
-          transparent 50%
-        );
+      <!-- Epoch Prize Section -->
+      <section
+        class="border-y border-black bg-black text-white relative overflow-hidden animate-fade-up delay-300"
+      >
+        <!-- Decorative geometric lines -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+          <div class="absolute top-0 left-1/4 w-[1px] h-full bg-white"></div>
+          <div class="absolute top-0 right-1/4 w-[1px] h-full bg-white"></div>
+          <div class="absolute top-1/2 left-0 w-full h-[1px] bg-white"></div>
+          <div
+            class="absolute top-0 left-0 w-[200%] h-[1px] bg-white transform rotate-45 origin-top-left"
+          ></div>
+        </div>
 
-      pointer-events: none;
-      z-index: 0;
-      animation: gradientShift 15s ease infinite;
-    }
+        <div
+          class="max-w-7xl mx-auto px-6 py-24 md:py-32 relative z-10 flex flex-col items-center text-center"
+        >
+          <p class="font-serif text-2xl md:text-3xl italic mb-8 text-gray-300">
+            Therefore, we are establishing the
+          </p>
 
-    @keyframes gradientShift {
-      0%,
-      100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.7;
-      }
-    }
+          <div
+            class="border border-white p-2 mb-10 transform transition-transform hover:scale-105 duration-500"
+          >
+            <h2
+              class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-widest uppercase bg-white text-black px-8 py-6"
+            >
+              Epoch Prize
+            </h2>
+          </div>
 
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+          <p
+            class="font-sans text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-400"
+          >
+            — A Grant Of —
+          </p>
 
-    @keyframes scaleIn {
-      from {
-        opacity: 0;
-        transform: scale(0.9);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
+          <div
+            class="font-sans text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter mb-12 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400"
+          >
+            $100 MILLION
+          </div>
 
-    .container {
-      position: relative;
-      z-index: 1;
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+          <div class="w-24 h-[2px] bg-white mb-10"></div>
 
-    img {
-      width: 100%;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 20px 60px rgb(0 0 0);
-      transition: box-shadow 0.3s ease;
-    }
+          <p
+            class="font-sans text-xl md:text-3xl font-light max-w-4xl leading-relaxed text-gray-200"
+          >
+            Award to be granted to researchers working on the development of
+            systemic rejuvenation therapies.
+          </p>
+        </div>
+      </section>
 
-    .glass-card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-radius: 30px;
-      border: 1px solid rgba(255, 0, 255, 0.3);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      padding: 40px;
-      margin: 30px 0;
-      animation: fadeInUp 0.8s ease;
-    }
+      <!-- Bottom Image Section -->
+      <section
+        class="max-w-5xl mx-auto px-6 py-24 border-b border-gray-200 animate-fade-up delay-100"
+      >
+        <div class="image-container max-w-4xl mx-auto">
+          <img
+            class="w-full h-auto object-cover border border-black"
+            src="bottom_img.png"
+            alt="Research"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
 
-    .contact {
-      color: white;
-      margin: 80px auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-radius: 25px;
-      /* border: 1px solid rgb(221 0 255 / 15%); */
-      padding: 50px 60px;
-      max-width: 600px;
-      /* box-shadow: 0 25px 70px rgb(114 0 255 / 23%); */
-      animation: scaleIn 0.8s ease;
-      will-change: transform;
-    }
+    <!-- Footer / Contact -->
+    <footer class="w-full bg-white">
+      <div
+        class="max-w-7xl mx-auto px-6 py-20 flex flex-col items-center text-center"
+      >
+        <div
+          class="w-12 h-12 border border-black transform rotate-45 mb-12 flex items-center justify-center"
+        >
+          <div class="w-4 h-4 bg-black"></div>
+        </div>
 
-    .contact-title {
-      font-size: 28px;
-      margin: 0 0 20px 0;
-      font-weight: 600;
-      background: #9c9c9c;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+        <p class="font-serif text-2xl md:text-3xl mb-8 text-gray-600 italic">
+          For inquiries please contact
+        </p>
 
-    .contact .email {
-      font-size: 24px;
-      margin: 10px 0;
-      padding: 15px 30px;
-      background: linear-gradient(
-        135deg,
-        rgb(184 0 255 / 68%),
-        rgba(0, 216, 255, 0.3)
-      );
-      border-radius: 15px;
-      /* border: 2px solid rgb(253 0 255 / 50%); */
-      transition: all 0.3s ease;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      color: #472140;
-      font-weight: 500;
-      box-shadow: 0 5px 20px rgb(255 0 182 / 0%);
-    }
+        <a
+          href="mailto:revertedyouth@protonmail.com"
+          class="email-link px-6 py-4 border border-black group inline-block transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_4px_15px_rgba(0,0,0,0.1)]"
+        >
+          <span
+            class="font-sans text-xl md:text-3xl font-medium tracking-wide text-black relative z-10"
+          >
+            revertedyouth@protonmail.com
+          </span>
+        </a>
+      </div>
 
-    .contact .email:hover {
-      /* background: linear-gradient(
-        135deg,
-        rgba(184, 0, 255, 0.5),
-        rgba(0, 216, 255, 0.5)
-      ); */
-      transform: translateY(-2px);
-      /* box-shadow: 0 10px 30px rgb(0 216 255 / 70%);
-      border-color: rgba(0, 255, 208, 0.8); */
-      /* color: #fff; */
-    }
-
-    .title {
-      margin: 100px auto 50px;
-      display: flex;
-      justify-content: center;
-      font-size: clamp(36px, 6vw, 70px);
-      font-family: "Playfair", serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-      text-align: center;
-      /* background: linear-gradient(134deg, #ff006a, #5e056f, #028d9d, #054739); */
-      /* background: linear-gradient(134deg, #ed0f42, #5e056f, #028d9d, #054739); */
-      /* background: linear-gradient(134deg, #135877, #5e056f, #028d9d, #054739); */
-      background: linear-gradient(134deg, #ff0000, #5e056f, #028d9d, #054739);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: fadeInUp 0.8s ease;
-      padding: 0 20px;
-      line-height: 1.2;
-    }
-
-    .subtitle {
-      margin: 60px auto 20px;
-      display: flex;
-      justify-content: center;
-      font-size: clamp(32px, 5vw, 69px);
-      text-align: center;
-      /* background: linear-gradient(135deg, #0072ff, #8900ff, #750074); */
-      background: linear-gradient(135deg, #ff00d8, #0033ff, #ff0000);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: fadeInUp 1s ease;
-      padding: 0 20px;
-      font-family: "Gruppo", sans-serif;
-      font-weight: 200;
-    }
-
-    .top_img_wrap {
-      width: 80%;
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 20px 60px rgb(0 0 0);
-      z-index: -10;
-      aspect-ratio: 16 / 5;
-    }
-
-    .top_img_stub {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.02),
-        rgba(0, 216, 255, 0.08),
-        rgba(255, 0, 255, 0.04)
-      );
-      opacity: 1;
-      transition: opacity 0.5s ease;
-      pointer-events: none;
-    }
-
-    .top_img {
-      width: 100%;
-      /* height: 100%; */
-      margin: 0;
-      display: block;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-      will-change: opacity;
-      box-shadow: none;
-      border-radius: 0;
-      object-fit: cover;
-    }
-
-    .top_img_wrap.is-loaded .top_img {
-      opacity: 1;
-    }
-
-    .top_img_wrap.is-loaded .top_img_stub {
-      opacity: 0;
-    }
-
-    .main {
-      font-size: clamp(20px, 3vw, 35px);
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      margin: 60px 0;
-    }
-
-    .main p {
-      margin: 15px 20px;
-      width: 90%;
-      max-width: 800px;
-      line-height: 1.6;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      padding: 30px 40px;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-      animation: fadeInUp 0.8s ease;
-      transition: all 0.3s ease;
-      will-change: transform;
-    }
-
-    .main p:hover {
-      background: rgba(255, 255, 255, 0.08);
-      transform: translateY(-5px);
-      /* box-shadow: 0 15px 50px rgba(255, 0, 255, 0.5); */
-      box-shadow: 0 15px 50px rgb(0 255 255 / 34%);
-    }
-
-    .bottom_img {
-      width: 90%;
-      max-width: 700px;
-      margin: 60px auto;
-      display: block;
-    }
-
-    .prize {
-      font-size: clamp(20px, 3vw, 35px);
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      margin: 10px 0;
-    }
-
-    .prize p {
-      margin: 20px 20px;
-      width: 90%;
-      max-width: 900px;
-      text-align: center;
-      line-height: 1.6;
-    }
-
-    .summ {
-      text-align: center;
-      font-size: clamp(48px, 8vw, 100px);
-      font-weight: 700;
-      background: linear-gradient(135deg, #c8ff00, #6c00e3, #ff005f, #a7de00);
-      /* background: #fff; */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 30px 0;
-      /* text-shadow: 0 0 40px rgb(255 0 213 / 50%); */
-      text-shadow: 0 0 40px rgb(234 0 255 / 50%);
-      animation: scaleIn 1s ease;
-      padding: 20px;
-    }
-
-    .prize-name {
-      background: linear-gradient(135deg, rgb(49 49 49 / 95%), rgb(0 0 0));
-      color: #282828;
-      padding: 20px 35px;
-      border-radius: 20px;
-      font-weight: 600;
-      box-shadow: 0 10px 40px rgb(1 1 1 / 26%);
-      border: 1px solid rgb(77 77 77 / 30%);
-      transition: all 0.5s ease;
-      display: inline-block;
-    }
-
-    .prize-name:hover {
-      /*      transform: scale(1.05); */
-      box-shadow: 0 10px 40px #3fb9b9;
-      color: #00fff5;
-    }
-
-    .epoch_prize {
-      width: 90%;
-      max-width: 700px;
-      margin: 60px auto;
-      display: block;
-    }
-
-    @media (max-width: 960px) {
-      .glass-card {
-        padding: 25px;
-        border-radius: 20px;
-      }
-
-      .title {
-        margin: 60px auto 30px;
-      }
-
-      .subtitle {
-        margin: 40px auto 0px;
-      }
-
-      .top_img_wrap {
-        width: 90%;
-      }
-
-      .bottom_img {
-        width: 95%;
-        margin: 0px auto 30px;
-      }
-
-      .main p {
-        width: 95%;
-        padding: 20px 25px;
-        font-size: clamp(18px, 4vw, 28px);
-      }
-
-      .prize p {
-        width: 95%;
-        padding: 0;
-      }
-
-      .prize .first-p {
-        line-height: 1.5;
-      }
-
-      .epoch_prize {
-        width: 95%;
-        margin: 0 auto;
-      }
-
-      .contact {
-        padding: 35px 30px;
-        margin: 50px auto;
-        width: calc(100% - 40px);
-        max-width: 600px;
-      }
-
-      .contact-title {
-        font-size: 22px;
-      }
-
-      .contact .email {
-        font-size: 18px;
-        padding: 12px 20px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .main p {
-        padding: 15px 20px;
-      }
-
-      .contact {
-        padding: 25px 20px;
-      }
-    }
-  </style>
-  <body>
-    <div class="title">D. Rothschild & A. Usmanov</div>
-    <div class="top_img_wrap">
-      <div class="top_img_stub" aria-hidden="true"></div>
-      <img
-        class="top_img"
-        src="top_img.png"
-        loading="eager"
-        decoding="sync"
-        onload="markTopImageLoaded(this)"
-      />
-    </div>
-    <div class="subtitle">Reverted Youth Mission</div>
-    <div class="main">
-      <p>
-        We believe that systemic rejuvenation of the human body is now very
-        close.
-      </p>
-
-      <p>
-        Remarkable advances in partial reprogramming and epigenetic resetting
-        suggest that systemic rejuvenation therapies may be only a few years
-        away.
-      </p>
-
-      <p>
-        We deeply want as many people as possible to live long enough to benefit
-        from them.
-      </p>
-
-      <p>
-        That’s why we are focusing our efforts on accelerating the development
-        of these therapies—and we invite everyone to join this movement
-      </p>
-    </div>
-    <!-- <img class="epoch_prize" src="epoch_prize.png" /> -->
-    <div class="prize">
-      <p class="first-p">
-        Therefore, we are establishing the
-        <span class="prize-name">Epoch Prize</span> — a
-      </p>
-
-      <p class="summ">$100 million</p>
-
-      <p>
-        award to be granted to researchers working on the development of
-        systemic rejuvenation therapies
-      </p>
-    </div>
-    <img class="bottom_img" src="bottom_img.png" />
-
-    <div class="contact">
-      <p class="contact-title">For inquiries please contact:</p>
-      <a href="mailto:revertedyouth@protonmail.com" class="email">
-        revertedyouth@protonmail.com
-      </a>
-    </div>
-    <script>
-      function markTopImageLoaded(imageElement) {
-        const wrapper = imageElement.closest(".top_img_wrap");
-        if (wrapper) {
-          wrapper.classList.add("is-loaded");
-        }
-      }
-
-      const topImage = document.querySelector(".top_img");
-      if (topImage && topImage.complete) {
-        markTopImageLoaded(topImage);
-      }
-    </script>
+      <div
+        class="border-t border-black px-6 py-8 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm font-sans uppercase tracking-widest text-gray-500 gap-4"
+      >
+        <span>&copy; Reverted Youth Mission</span>
+        <div class="flex gap-2 hidden md:flex">
+          <div class="w-2 h-2 bg-black rounded-full"></div>
+          <div class="w-2 h-2 border border-black rounded-full"></div>
+          <div class="w-2 h-2 bg-black rounded-full"></div>
+        </div>
+        <span>Confidential & Professional</span>
+      </div>
+    </footer>
   </body>
 </html>
